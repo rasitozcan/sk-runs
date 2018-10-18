@@ -6,6 +6,17 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  - name: "runners"
+    label: "Runners"
+    folder: "src/pages/runners"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "runner"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Photo", name: "photo", widget: "image"}
+      - {label: "Description", name: "description", widget: "text"}
+
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
