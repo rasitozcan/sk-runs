@@ -65,7 +65,7 @@ Runner.propTypes = {
   }),
 };
 
-export default BlogPost;
+export default Runner;
 
 export const pageQuery = graphql`
   query RunnerByID($id: String!) {
