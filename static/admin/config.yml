@@ -17,6 +17,7 @@ collections:
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Photo", name: "photo", widget: "image"}
       - {label: "Description", name: "description", widget: "text"}
+      - {label: "Fonzip URL", name: "fonzip", widget: "string"}
 
   - name: "blog"
     label: "Blog"

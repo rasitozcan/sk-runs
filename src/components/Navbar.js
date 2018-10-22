@@ -1,40 +1,34 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
+import React from 'react';
+import { Link } from 'gatsby';
+import logo from '../img/logo.png';
+import { Grid, Row, Col } from 'react-flexbox-grid';
+
+/*
+<Link className="navbar-item" to="/about">
+  About
+</Link>
+*/
 
 const Navbar = () => (
-  <nav className="navbar is-transparent">
-    <div className="container">
-      <div className="navbar-brand">
-        <Link to="/" className="navbar-item">
-          <figure className="image">
+  <nav className="sk-nav">
+    <Grid>
+      <Row middle="xs" className="sk-nav-row">
+        <Col xs={12}>
+          <Link to="/">
             <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
-          </figure>
-        </Link>
-      </div>
-      <div className="navbar-start">
-        <Link className="navbar-item" to="/about">
-          About
-        </Link>
-        <Link className="navbar-item" to="/products">
-          Products
-        </Link>
-      </div>
-      <div className="navbar-end">
-        <a
-          className="navbar-item"
-          href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span className="icon">
-            <img src={github} alt="Github" />
-          </span>
-        </a>
-      </div>
-    </div>
+          </Link>
+          <div className="sk-nav-links">
+            <Link className="sk-nav-links-link" to="/about">
+              About
+            </Link>
+            <Link className="sk-nav-links-link" to="/products">
+              Products
+            </Link>
+          </div>
+        </Col>
+      </Row>
+    </Grid>
   </nav>
-)
+);
 
-export default Navbar
+export default Navbar;
