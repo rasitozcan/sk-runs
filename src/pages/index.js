@@ -4,13 +4,13 @@ import { Link, graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import banner from '../img/banner.png';
-import map from '../img/map.png';
+import map from '../img/route.png';
 import Runner from '../components/Runner';
 
 export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props;
-    // const { edges: posts } = data.allMarkdownRemark;
+    const { edges: posts } = data.allMarkdownRemark;
 
     return (
       <Layout>
