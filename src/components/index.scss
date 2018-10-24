@@ -7,9 +7,35 @@ body {
   min-height: 100%;
 }
 
+html {
+  font-size: 16px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+}
+
 body {
   background: #f7f7f7;
   font-family: 'Roboto', sans-serif;
+  color: #4a4a4a;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+p,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #007aff;
+  text-decoration: none;
 }
 
 h1,
@@ -20,6 +46,8 @@ h5,
 h6 {
   color: #000;
   margin-bottom: 20px;
+  font-size: 100%;
+  font-weight: normal;
 }
 
 h1 {
@@ -33,6 +61,9 @@ h2 {
 hr {
   background-color: #d1d1d6;
   height: 1px;
+  border: none;
+  display: block;
+  margin: 1.5rem 0;
 }
 
 .sk-nav {
@@ -121,7 +152,11 @@ hr {
   border-radius: 8px;
   margin-right: 10px;
   margin-bottom: 10px;
+  display: inline-block;
   cursor: pointer;
+  &:hover {
+    color: inherit;
+  }
   &--inverted {
     background: #fff;
     color: #007aff;

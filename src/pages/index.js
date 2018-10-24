@@ -50,7 +50,9 @@ export default class IndexPage extends React.Component {
           </Row>
           <Row center="xs">
             <Col sm={4}>
-              <button className="sk-button">Tumunu Gor</button>
+              <Link className="sk-button" to="/kosucular">
+                Tümünü Gör
+              </Link>
             </Col>
           </Row>
           <hr />

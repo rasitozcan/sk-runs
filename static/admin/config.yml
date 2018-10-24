@@ -39,14 +39,14 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - file: "src/pages/allrunners/index.md"
+      - file: "src/pages/kosucular/index.md"
         label: "Koşucular"
         name: "kosucular"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "allrunners-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-      - file: "src/pages/contact/index.md"
+      - file: "src/pages/iletisim/index.md"
         label: "İletişim"
         name: "iletisim"
         fields:
