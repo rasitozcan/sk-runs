@@ -10,13 +10,17 @@ const Footer = () => {
         <Row middle="xs" className="sk-nav-row">
           <Col xs={12}>
             <Link to="/">
-              <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
+              <img
+                src={logo}
+                alt="Sulukule Koşuyor"
+                style={{ width: '88px' }}
+              />
             </Link>
-            <Link className="sk-nav-links-link" to="/about">
-              About
+            <Link className="sk-nav-links-link" to="/kosucular">
+              Koşucular
             </Link>
-            <Link className="sk-nav-links-link" to="/products">
-              Products
+            <Link className="sk-nav-links-link" to="/iletisim">
+              İletişim
             </Link>
           </Col>
         </Row>

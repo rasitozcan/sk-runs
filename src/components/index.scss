@@ -22,8 +22,12 @@ h6 {
   margin-bottom: 20px;
 }
 
-h3 {
+h1 {
   font-size: 34px;
+}
+
+h2 {
+  font-size: 28px;
 }
 
 hr {
@@ -53,6 +57,10 @@ hr {
 
 .sk-jumbotron {
   margin: 40px 0;
+  h1 {
+    line-height: 1.2em;
+    font-weight: 500;
+  }
   &-caption {
     color: #007aff;
   }
@@ -84,11 +92,22 @@ hr {
     // border: 1px solid #d1d1d6;
     border-radius: 0 0 16px 16px;
     padding: 10px;
-    text-align: center;
     color: #000;
+    .name,
+    .description {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
     .name {
-      color: #007aff;
-      font-size: 15px;
+      font-size: 17px;
+    }
+    .description {
+      font-size: 13px;
+      padding: 0 0 5px;
+    }
+    a {
+      font-size: 14px;
     }
   }
 }
@@ -98,9 +117,14 @@ hr {
   color: #fff;
   padding: 10px;
   width: 100%;
-  border: 0;
+  border: 1px solid transparent;
   border-radius: 8px;
   margin-right: 10px;
   margin-bottom: 10px;
   cursor: pointer;
+  &--inverted {
+    background: #fff;
+    color: #007aff;
+    border: 1px solid #007aff;
+  }
 }

@@ -18,11 +18,11 @@ const Navbar = () => (
             <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
           </Link>
           <div className="sk-nav-links">
-            <Link className="sk-nav-links-link" to="/about">
-              About
+            <Link className="sk-nav-links-link" to="/kosucular">
+              Koşucular
             </Link>
-            <Link className="sk-nav-links-link" to="/products">
-              Products
+            <Link className="sk-nav-links-link" to="/iletisim">
+              İletişim
             </Link>
           </div>
         </Col>

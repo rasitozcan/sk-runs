@@ -1,9 +1,9 @@
 import React from 'react';
 import jimi from '../img/jimi.jpg';
 
-const Runner = ({ name, description, url }) => {
+const Runner = ({ name, description, url, fonzip, slug }) => {
   return (
-    <a href="https://fonzip.com/sulukulegonulluleri/bagis#/" target="_blank">
+    <a href={slug} title={name + ' | ' + description}>
       <div className="sk-runner-card">
         <div
           className="sk-runner-card-photo"
@@ -12,8 +12,13 @@ const Runner = ({ name, description, url }) => {
           }}
         />
         <div className="sk-runner-card-context">
-          <span className="name">{name}</span>
-          <p>{description}</p>
+          <p className="name">{name}</p>
+          <p className="description">{description}</p>
+          <p>
+            <a href={fonzip} target="_blank">
+              Bagis Yap
+            </a>
+          </p>
         </div>
       </div>
     </a>

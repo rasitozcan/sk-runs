@@ -4,13 +4,13 @@ import { Link, graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import banner from '../img/banner.png';
-import map from '../img/route.png';
+import parkour from '../img/parkour.jpg';
 import Runner from '../components/Runner';
 
 export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props;
-    const { edges: posts } = data.allMarkdownRemark;
+    const { edges: runners } = data.allMarkdownRemark;
 
     return (
       <Layout>
@@ -18,11 +18,11 @@ export default class IndexPage extends React.Component {
           <Row center="xs" className="sk-jumbotron">
             <Col xs={5}>
               <span className="sk-jumbotron-caption">KOŞUYORUZ</span>
-              <h3>Biz 2018 Yilinda da Kosuyoruz, Peki Ya Sen?</h3>
+              <h1>Sulukule için Koşuyorum, Okulu Terki Önlüyorum</h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse non massa tincidunt, imperdiet sem nec, volutpat
-                lacus. Vivamus et lectus eu urna vehicula vehicula eu et augue.
+                <i>Sulukule için Koşuyorum, Okulu Terki Önlüyorum </i>
+                <br /> Eğitimde fırsat eşitliğini sağlamak için koşuyoruz. Senin
+                de desteginle bir adim daha ileriye.
               </p>
             </Col>
           </Row>
@@ -32,64 +32,21 @@ export default class IndexPage extends React.Component {
             alt="Kosuyoruz"
           />
           <hr />
-          <h3>Kosucularimiz</h3>
+          <h2>Kosucularimiz</h2>
           <Row>
-            <Col xs={12} sm={6} md={3}>
-              <Runner
-                name="Jimi Hendrix"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                url="https://www.rollingstone.com/wp-content/uploads/2018/06/jimi-hendrix-3fcfe67d-3e3b-478d-96b2-217e30de0937.jpg"
-              />
-            </Col>
-            <Col xs={12} sm={6} md={3}>
-              <Runner
-                name="Mona Lisa"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                url="https://uploads7.wikiart.org/images/leonardo-da-vinci/mona-lisa.jpg!Large.jpg"
-              />
-            </Col>
-            <Col xs={12} sm={6} md={3}>
-              <Runner
-                name="John Mayer"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                url="https://images-na.ssl-images-amazon.com/images/I/C1AbK+ZQO9S._CR0,0,3840,2880_._SL1000_.jpg"
-              />
-            </Col>
-            <Col xs={12} sm={6} md={3}>
-              <Runner
-                name="Orianthi Panagaris"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                url="http://images2.fanpop.com/image/photos/12400000/orianthi-panagaris-orianthi-12415454-466-579.jpg"
-              />
-            </Col>
-            <Col xs={12} sm={6} md={3}>
-              <Runner
-                name="Mona Lisa"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                url="https://uploads7.wikiart.org/images/leonardo-da-vinci/mona-lisa.jpg!Large.jpg"
-              />
-            </Col>
-            <Col xs={12} sm={6} md={3}>
-              <Runner
-                name="John Mayer"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                url="https://images-na.ssl-images-amazon.com/images/I/C1AbK+ZQO9S._CR0,0,3840,2880_._SL1000_.jpg"
-              />
-            </Col>
-            <Col xs={12} sm={6} md={3}>
-              <Runner
-                name="Orianthi Panagaris"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                url="http://images2.fanpop.com/image/photos/12400000/orianthi-panagaris-orianthi-12415454-466-579.jpg"
-              />
-            </Col>
-            <Col xs={12} sm={6} md={3}>
-              <Runner
-                name="Jimi Hendrix"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                url="https://www.rollingstone.com/wp-content/uploads/2018/06/jimi-hendrix-3fcfe67d-3e3b-478d-96b2-217e30de0937.jpg"
-              />
-            </Col>
+            {runners.map(({ node: runner }) => {
+              return (
+                <Col xs={12} sm={6} md={3} key={runner.id}>
+                  <Runner
+                    name={runner.frontmatter.name}
+                    description={runner.frontmatter.description}
+                    url={runner.frontmatter.photo}
+                    fonzip={runner.frontmatter.fonzip}
+                    slug={runner.fields.slug}
+                  />
+                </Col>
+              );
+            })}
           </Row>
           <Row center="xs">
             <Col sm={4}>
@@ -97,9 +54,9 @@ export default class IndexPage extends React.Component {
             </Col>
           </Row>
           <hr />
-          <h3>Rota</h3>
+          <h2>Parkurlar</h2>
           <Row>
-            <img src={map} alt="" />
+            <img src={parkour} style={{ width: '100%' }} alt="" />
           </Row>
         </Grid>
       </Layout>
@@ -118,23 +75,48 @@ IndexPage.propTypes = {
 export const pageQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+      filter: { frontmatter: { templateKey: { eq: "runner" } } }
     ) {
       edges {
         node {
-          excerpt(pruneLength: 400)
           id
           fields {
             slug
           }
           frontmatter {
-            title
             templateKey
-            date(formatString: "MMMM DD, YYYY")
+            title
+            name
+            photo
+            description
+            fonzip
           }
         }
       }
     }
   }
 `;
+
+// export const pageQuery = graphql`
+//   query IndexQuery {
+//     allMarkdownRemark(
+//       sort: { order: DESC, fields: [frontmatter___date] }
+//       filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+//     ) {
+//       edges {
+//         node {
+//           excerpt(pruneLength: 400)
+//           id
+//           fields {
+//             slug
+//           }
+//           frontmatter {
+//             title
+//             templateKey
+//             date(formatString: "MMMM DD, YYYY")
+//           }
+//         }
+//       }
+//     }
+//   }
+// `;

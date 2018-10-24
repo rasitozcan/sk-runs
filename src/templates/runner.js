@@ -13,6 +13,7 @@ export const RunnerTemplate = ({
   name,
   description,
   photo,
+  fonzip,
   helmet,
 }) => {
   const RunnerContent = contentComponent || Content;
@@ -21,8 +22,12 @@ export const RunnerTemplate = ({
     <section className="section">
       {helmet || ''}
       <Col xs={3}>
-        <RunnerBase name={name} description={description} url={photo} />
-        <RunnerContent content={content} />
+        <RunnerBase
+          name={name}
+          description={description}
+          url={photo}
+          fonzip={fonzip}
+        />
       </Col>
     </section>
   );
@@ -38,17 +43,18 @@ RunnerTemplate.propTypes = {
 };
 
 const Runner = ({ data }) => {
-  const { markdownRemark: post } = data;
+  const { markdownRemark: runner } = data;
 
   return (
     <Layout>
       <RunnerTemplate
-        content={post.html}
+        content={runner.html}
         contentComponent={HTMLContent}
-        description={post.frontmatter.description}
-        helmet={<Helmet title={`${post.frontmatter.name} | Runner`} />}
-        name={post.frontmatter.name}
-        photo={post.frontmatter.photo}
+        description={runner.frontmatter.description}
+        helmet={<Helmet title={`${runner.frontmatter.name} | Runner`} />}
+        name={runner.frontmatter.name}
+        photo={runner.frontmatter.photo}
+        fonzip={runner.frontmatter.fonzip}
       />
     </Layout>
   );
