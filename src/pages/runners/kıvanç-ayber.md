@@ -1,6 +1,6 @@
 ---
 templateKey: runner
-title: Kıvanç Ayber
+title: kivanc-ayber
 name: Kıvanç Ayber
 photo: /img/kıvanç-ayber.jpg
 description: 'Eğitimde fırsat eşitliğini sağlamak için koşuyoruz. '
