@@ -13,7 +13,7 @@ slug:
 
 collections:
   - name: "runners"
-    label: "Runners"
+    label: "Runner"
     folder: "src/pages/runners"
     create: true
     slug: "{{slug}}"
