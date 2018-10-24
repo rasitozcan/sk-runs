@@ -1,7 +1,9 @@
 ---
-templateKey: allrunners-page
-title: Koşucular
+templateKey: contact-page
+path: /iletisim
+title: İletişim
 ---
-### Koşucular Alt Başlık
 
-Kosucular alt metin.
+### İletişim Alt Başlık
+
+İletişim alt metin.
