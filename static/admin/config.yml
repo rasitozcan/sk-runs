@@ -5,6 +5,12 @@ backend:
 media_folder: static/img
 public_folder: /img
 
+publish_mode: editorial_workflow
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+
 collections:
   - name: "runners"
     label: "Runners"
@@ -13,7 +19,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "runner"}
-      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Title (used for URL)", name: "title", widget: "string"}
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Photo", name: "photo", widget: "image"}
       - {label: "Description", name: "description", widget: "text"}
