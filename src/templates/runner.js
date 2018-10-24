@@ -4,52 +4,27 @@ import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
+import { default as RunnerBase } from '../components/Runner';
+import { Row, Col } from 'react-flexbox-grid';
 
 export const RunnerTemplate = ({
   content,
   contentComponent,
-  description,
   name,
+  description,
   photo,
   helmet,
 }) => {
   const RunnerContent = contentComponent || Content;
 
   return (
-    // <section className="section">
-    //   {helmet || ''}
-    //   <div className="container content">
-    //     <div className="columns">
-    //       <div className="column is-10 is-offset-1">
-    //         <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-    //           {name}
-    //         </h1>
-    //         <p>{photo}</p>
-    //         <p>{description}</p>
-    //         <RunnerContent content={content} />
-    //       </div>
-    //     </div>
-    //   </div>
-    // </section>
-    <div className="column is-one-quarter">
-      <div className="card">
-        <div className="card-image">
-          <figure className="image is-4by3">
-            <img src={photo} alt="Placeholder" />
-          </figure>
-        </div>
-        <div className="card-content">
-          <div className="media">
-            <div className="media-content">
-              <p className="title is-4">{name}</p>
-            </div>
-          </div>
-
-          <div className="content">{description}</div>
-          <RunnerContent content={content} />
-        </div>
-      </div>
-    </div>
+    <section className="section">
+      {helmet || ''}
+      <Col xs={3}>
+        <RunnerBase name={name} description={description} url={photo} />
+        <RunnerContent content={content} />
+      </Col>
+    </section>
   );
 };
 
@@ -96,6 +71,7 @@ export const pageQuery = graphql`
         name
         photo
         description
+        fonzip
       }
     }
   }
