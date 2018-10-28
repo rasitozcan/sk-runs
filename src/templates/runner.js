@@ -5,7 +5,7 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
 import { default as RunnerBase } from '../components/Runner';
-import { Row, Col } from 'react-flexbox-grid';
+import { Grid, Row, Col } from 'react-flexbox-grid';
 
 export const RunnerTemplate = ({
   content,
@@ -13,23 +13,38 @@ export const RunnerTemplate = ({
   name,
   description,
   photo,
+  goalDonation,
+  totalDonation,
   fonzip,
   helmet,
 }) => {
-  const RunnerContent = contentComponent || Content;
-
   return (
-    <section className="section">
-      {helmet || ''}
-      <Col xs={3}>
-        <RunnerBase
-          name={name}
-          description={description}
-          url={photo}
-          fonzip={fonzip}
-        />
-      </Col>
-    </section>
+    <Grid>
+      <Row className="sk-runner-detail">
+        {helmet || ''}
+        <Col sm={4}>
+          <img
+            className="sk-runner-detail-photo"
+            style={{ width: '100%' }}
+            src={photo}
+            alt={name}
+          />
+        </Col>
+        <Col xs={8}>
+          <h1>{name}</h1>
+          <p>{description}</p>
+          <p>
+            <strong>Hedeflediğim Bağış Miktarı: </strong>
+            {goalDonation} TL
+          </p>
+          <p>
+            <strong>Topladığım Bağış Miktarı: </strong>
+            {totalDonation} TL
+          </p>
+          <a href={fonzip}>Bağış Yap</a>
+        </Col>
+      </Row>
+    </Grid>
   );
 };
 
@@ -54,6 +69,8 @@ const Runner = ({ data }) => {
         helmet={<Helmet title={`${runner.frontmatter.name} | Runner`} />}
         name={runner.frontmatter.name}
         photo={runner.frontmatter.photo}
+        goalDonation={runner.frontmatter.goaldonation}
+        totalDonation={runner.frontmatter.totaldonation}
         fonzip={runner.frontmatter.fonzip}
       />
     </Layout>

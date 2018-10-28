@@ -1,5 +1,4 @@
 import React from 'react';
-import jimi from '../img/jimi.jpg';
 
 const Runner = ({ name, description, url, fonzip, slug }) => {
   return (

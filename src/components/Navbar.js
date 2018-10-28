@@ -9,21 +9,46 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 </Link>
 */
 
-const Navbar = () => (
-  <nav className="sk-nav">
+const Navbar = ({ handleClick }) => (
+  <nav className="sk-nav sk-nav-topnav">
     <Grid>
       <Row middle="xs" className="sk-nav-row">
         <Col xs={12}>
           <Link to="/">
-            <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
+            <img src={logo} alt="Sk Runs" style={{ width: '88px' }} />
           </Link>
           <div className="sk-nav-links">
-            <Link className="sk-nav-links-link" to="/kosucular">
-              Koşucular
-            </Link>
-            <Link className="sk-nav-links-link" to="/iletisim">
+            {/* <Link className="sk-nav-links-link" to="/kosucular">
+              Koşucularımız
+            </Link> */}
+            <a
+              className="sk-nav-links-link"
+              href="#kosucularimiz"
+              onClick={e => handleClick(e)}
+            >
+              Koşucularımız
+            </a>
+            <a
+              className="sk-nav-links-link"
+              href="#donations"
+              onClick={e => handleClick(e)}
+            >
+              Bağışlar
+            </a>
+            <a
+              className="sk-nav-links-link"
+              href="#parkurlar"
+              onClick={e => handleClick(e)}
+            >
+              Parkurlar
+            </a>
+            <a
+              className="sk-nav-links-link"
+              href="#iletisim"
+              onClick={e => handleClick(e)}
+            >
               İletişim
-            </Link>
+            </a>
           </div>
         </Col>
       </Row>

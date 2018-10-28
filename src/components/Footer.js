@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="sk-nav sk-footer">
       <Grid>
         <Row middle="xs" className="sk-nav-row">
-          <Col xs={12}>
+          <Col sm={2}>
             <Link to="/">
               <img
                 src={logo}
@@ -16,12 +16,9 @@ const Footer = () => {
                 style={{ width: '88px' }}
               />
             </Link>
-            <Link className="sk-nav-links-link" to="/kosucular">
-              Koşucular
-            </Link>
-            <Link className="sk-nav-links-link" to="/iletisim">
-              İletişim
-            </Link>
+          </Col>
+          <Col sm={10}>
+            <span>Adres?</span>
           </Col>
         </Row>
       </Grid>

@@ -21,6 +21,9 @@ collections:
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Photo", name: "photo", widget: "image"}
       - {label: "Description", name: "description", widget: "text"}
+      - {label: "Hedeflenen Bagis", name: "goaldonation", widget: "text"}
+      - {label: "Toplanan Bagis", name: "totaldonation", widget: "text"}
+      - {label: "Description", name: "description", widget: "text"}
       - {label: "Fonzip URL", name: "fonzip", widget: "string"}
 
   - name: "blog"
