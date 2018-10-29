@@ -95,6 +95,8 @@ export const pageQuery = graphql`
         photo
         description
         fonzip
+        goaldonation
+        totaldonation
       }
     }
   }
