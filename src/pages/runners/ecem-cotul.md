@@ -8,6 +8,7 @@ description: >-
   kadar büyük bir duygu ki benim için anlatamam. Bu sene de çocuklar okulu terk
   etmesin diye Sulukuleli çocuklar için koşacağım. 
 
+
   Bağışlarınız için şimdiden teşekkürler! Benim için anlamı çok büyük :)
 goaldonation: '3000'
 totaldonation: '350'
