@@ -41,7 +41,9 @@ export const RunnerTemplate = ({
             <strong>Topladığım Bağış Miktarı: </strong>
             {totalDonation} TL
           </p>
-          <a href={fonzip}>Bağış Yap</a>
+          <a href={fonzip} target="_blank">
+            Bağış Yap
+          </a>
         </Col>
       </Row>
     </Grid>

@@ -17,9 +17,7 @@ const Footer = () => {
               />
             </Link>
           </Col>
-          <Col sm={10}>
-            <span>Adres?</span>
-          </Col>
+          <Col sm={10} />
         </Row>
       </Grid>
     </footer>

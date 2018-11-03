@@ -42,7 +42,7 @@ export default () => (
           </Row>
           <Row>
             <Col sm={12}>
-              <div data-netlify-recaptcha="true" />
+              <div data-netlify-recaptcha />
             </Col>
           </Row>
           <Row>

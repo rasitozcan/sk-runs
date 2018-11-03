@@ -16,10 +16,10 @@ export default class IndexPage extends React.Component {
 
     return (
       <Layout>
-        <Grid>
+        <Grid className="sk-home">
           <Jumbotron />
           <Runners data={runners} />
-          <DonationChart goal={109600} total={10000} />
+          <DonationChart data={runners} />
           <Parkours />
           <ContactForm />
         </Grid>
@@ -54,6 +54,8 @@ export const pageQuery = graphql`
             photo
             description
             fonzip
+            goaldonation
+            totaldonation
           }
         }
       }
