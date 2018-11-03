@@ -2,10 +2,11 @@
 templateKey: runner
 title: kivanc-ayber
 name: Kıvanç Ayber
-photo: /img/kivanc.png
+photo: /img/kivancayber.png
 description: 'Eğitimde fırsat eşitliğini sağlamak için koşuyoruz. '
-goaldonation: 2500
-totaldonation: 100
+goaldonation: '1000'
+totaldonation: '360'
 fonzip: >-
   https://fonzip.com/sulukulegonulluleri/kampanya/sulukule-icin-kosuyorum--okulu-terki-onluyorum--6
 ---
+
