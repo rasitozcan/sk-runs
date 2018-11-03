@@ -8,8 +8,8 @@ const Footer = () => {
     <footer className="sk-nav sk-footer">
       <Grid>
         <Row middle="xs" className="sk-nav-row">
-          <Col sm={2}>
-            <Link to="/">
+          <Col sm={2} style={{ height: '24px' }}>
+            <Link to="/" style={{ display: 'inline-block' }}>
               <img
                 src={logo}
                 alt="Sulukule Koşuyor"

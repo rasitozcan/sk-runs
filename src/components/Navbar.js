@@ -13,9 +13,9 @@ const Navbar = ({ handleClick }) => (
   <nav className="sk-nav sk-nav-topnav">
     <Grid>
       <Row middle="xs" className="sk-nav-row">
-        <Col xs={12}>
-          <Link to="/">
-            <img src={logo} alt="Sk Runs" style={{ width: '88px' }} />
+        <Col xs={12} style={{ height: '30px' }}>
+          <Link to="/" style={{ display: 'inline-block' }}>
+            <img src={logo} alt="Sk Runs" />
           </Link>
           <div className="sk-nav-links">
             {/* <Link className="sk-nav-links-link" to="/kosucular">

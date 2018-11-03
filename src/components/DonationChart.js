@@ -11,8 +11,8 @@ export default ({ data: runners }) => {
       let goaldonation = runner.node.frontmatter.goaldonation;
       let totaldonation = runner.node.frontmatter.totaldonation;
 
-      goaldonation = typeof goaldonation === 'number' ? goaldonation : 0;
-      totaldonation = typeof totaldonation === 'number' ? totaldonation : 0;
+      goaldonation = isNaN(goaldonation) ? 0 : parseInt(goaldonation);
+      totaldonation = isNaN(totaldonation) ? 0 : parseInt(totaldonation);
 
       goal += goaldonation;
       total += totaldonation;

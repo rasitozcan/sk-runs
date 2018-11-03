@@ -16,7 +16,7 @@ const Runner = ({ name, description, url, fonzip, slug }) => {
       />
       <div className="sk-runner-card-context">
         <p className="name">{name}</p>
-        <p className="description">{description}</p>
+        <p className="description">{description.slice(0, 150) + '...'}</p>
         <p>
           <a href={fonzip} target="_blank">
             Bağış Yap

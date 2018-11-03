@@ -141,9 +141,11 @@ hr {
   &-photo {
     border-radius: 16px 16px 0 0;
     width: 100%;
-    height: 320px;
-    background-size: cover;
+    height: 230px;
+    background-size: 100% auto;
     background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #fff;
   }
   &-context {
     background: #fff;
@@ -151,8 +153,7 @@ hr {
     border-radius: 0 0 16px 16px;
     padding: 10px;
     color: #000;
-    .name,
-    .description {
+    .name {
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
