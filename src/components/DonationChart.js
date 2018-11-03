@@ -3,18 +3,18 @@ import { Row, Col } from 'react-flexbox-grid';
 import PieChart from 'react-svg-piechart';
 
 export default ({ data: runners }) => {
-  let goal = 0;
+  let goal = 109600;
   let total = 0;
 
   if (runners && runners.length) {
     runners.forEach(runner => {
-      let goaldonation = runner.node.frontmatter.goaldonation;
+      // let goaldonation = runner.node.frontmatter.goaldonation;
       let totaldonation = runner.node.frontmatter.totaldonation;
 
-      goaldonation = isNaN(goaldonation) ? 0 : parseInt(goaldonation);
+      // goaldonation = isNaN(goaldonation) ? 0 : parseInt(goaldonation);
       totaldonation = isNaN(totaldonation) ? 0 : parseInt(totaldonation);
 
-      goal += goaldonation;
+      // goal += goaldonation;
       total += totaldonation;
     });
   }
