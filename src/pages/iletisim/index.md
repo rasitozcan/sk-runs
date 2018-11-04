@@ -1,9 +1,7 @@
 ---
 templateKey: contact-page
-path: /iletisim
 title: İletişim
 ---
+### Tebrikler
 
-### İletişim Alt Başlık
-
-İletişim alt metin.
+Mesajınız başarı ile iletilidi.
