@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row } from 'react-flexbox-grid';
+import { Row, Col } from 'react-flexbox-grid';
 import parkour from '../img/parkour.jpg';
 
 const Parkours = () => {
@@ -8,7 +8,13 @@ const Parkours = () => {
       <hr />
       <h2 id="parkurlar">Parkurlar</h2>
       <Row>
-        <img src={parkour} style={{ width: '100%' }} alt="" />
+        <Col xs={12}>
+          <img
+            src={parkour}
+            style={{ width: '100%', height: 'auto' }}
+            alt="Parkurlar"
+          />
+        </Col>
       </Row>
     </React.Fragment>
   );

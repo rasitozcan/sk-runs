@@ -13,10 +13,12 @@ const Navbar = ({ handleClick }) => (
   <nav className="sk-nav sk-nav-topnav">
     <Grid>
       <Row middle="xs" className="sk-nav-row">
-        <Col xs={12} style={{ height: '30px' }}>
+        <Col xs={4} style={{ height: '30px' }}>
           <Link to="/" style={{ display: 'inline-block' }}>
             <img src={logo} alt="Sk Runs" />
           </Link>
+        </Col>
+        <Col xs={8} className="sk-nav-links-container">
           <div className="sk-nav-links">
             {/* <Link className="sk-nav-links-link" to="/kosucular">
               Koşucularımız

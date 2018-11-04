@@ -7,7 +7,12 @@ export default () => (
     <h2 id="iletisim">İletişim</h2>
     <Row className="sk-contact-form">
       <Col md={4}>
-        <form name="contact" method="POST" data-netlify="true">
+        <form
+          name="contact"
+          method="POST"
+          action="iletisim"
+          data-netlify="true"
+        >
           <Row>
             <Col sm={12}>
               <label>Ad:</label>

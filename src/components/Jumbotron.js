@@ -3,7 +3,7 @@ import { Row, Col } from 'react-flexbox-grid';
 
 export default () => (
   <Row center="xs" className="sk-jumbotron">
-    <Col xs={5}>
+    <Col sm={5}>
       {/* <span className="sk-jumbotron-caption">KOŞUYORUZ</span> */}
       <h1>Sulukule için Koşuyorum, Okulu Terki Önlüyorum</h1>
       <p>

@@ -181,6 +181,7 @@ hr {
   display: inline-block;
   cursor: pointer;
   text-decoration: none !important;
+  margin-bottom: 10px;
   &--inverted {
     background: #fff;
     color: #007aff;
@@ -255,5 +256,21 @@ hr {
   }
   p {
     margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .sk-nav-links-container {
+    overflow-y: scroll;
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 20px,
+      black 90%,
+      transparent
+    );
+  }
+  .sk-nav-links {
+    width: 100%;
   }
 }
