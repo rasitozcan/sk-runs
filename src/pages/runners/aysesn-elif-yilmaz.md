@@ -4,9 +4,11 @@ title: aysesn-elif-yilmaz
 name: Ayşen Elif Yılmaz
 photo: /img/elifyilmaz.png
 description: >-
-  Merhaba bir konuda desteğe ihtiyacım var! Bu yıl 40. İstanbul Maratonu’nda,
-  Sulukule Gönüllüleri Derneği(SGD) için çocukların okulu terkini önlemek
-  amacıyla koşuyorum. 
+  Merhaba bir konuda desteğe ihtiyacım var! 
+
+
+  Bu yıl 40. İstanbul Maratonu’nda, Sulukule Gönüllüleri Derneği(SGD) için
+  çocukların okulu terkini önlemek amacıyla koşuyorum.
 
 
   ‘’Hiçbir çocuğun kendindeki yeteneği ve potansiyeli keşfetmeden okuldan
