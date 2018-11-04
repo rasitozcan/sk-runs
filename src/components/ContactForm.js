@@ -9,10 +9,11 @@ export default () => (
       <Col md={4}>
         <form
           name="contact"
-          method="POST"
-          action="iletisim"
+          method="post"
           data-netlify="true"
+          data-netlify-honeypot="bot-field"
         >
+          <input type="hidden" name="form-name" value="contact" />
           <Row>
             <Col sm={12}>
               <label>Ad:</label>
@@ -47,7 +48,10 @@ export default () => (
           </Row>
           <Row>
             <Col sm={12}>
-              <div data-netlify-recaptcha />
+              <label>Eğer bot/robot değilseniz bu alanı doldurmayın:</label>
+            </Col>
+            <Col sm={12}>
+              <input name="bot-field" />
             </Col>
           </Row>
           <Row>
