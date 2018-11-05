@@ -18,13 +18,13 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
       </Row>
       <Row>
         <Col sm={2}>
-          <a
+          <button
             onClick={e => navigate('/')}
             style={{ marginTop: 20 }}
             className="sk-button"
           >
             Geri Dön
-          </a>
+          </button>
         </Col>
       </Row>
     </Grid>

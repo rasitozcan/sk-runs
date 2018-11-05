@@ -18,7 +18,7 @@ const Runner = ({ name, description, url, fonzip, slug }) => {
         <p className="name">{name}</p>
         <p className="description">{description.slice(0, 150) + '...'}</p>
         <p>
-          <a href={fonzip} target="_blank">
+          <a href={fonzip} target="_blank" rel="noopener noreferrer">
             Bağış Yap
           </a>
         </p>

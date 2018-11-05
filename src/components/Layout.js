@@ -12,7 +12,7 @@ const handleClick = (e, location) => {
 
 const TemplateWrapper = ({ children, location }) => (
   <div>
-    <Helmet title="SK Koşuyor" />
+    <Helmet title="Sulukule Koşuyor" />
     <Navbar handleClick={handleClick} />
     <div>{children}</div>
     <Footer />

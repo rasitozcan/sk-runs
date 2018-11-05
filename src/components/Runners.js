@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'react-flexbox-grid';
 import Runner from './Runner';
+import { navigate } from 'gatsby';
 
 class Runners extends Component {
   state = {
@@ -12,14 +13,14 @@ class Runners extends Component {
     }));
   }
   render() {
-    const { data } = this.props;
+    const { data, showAll } = this.props;
     const { dataset } = this.state;
     return (
       <React.Fragment>
         <h2 id="kosucularimiz">Koşucularımız</h2>
         <Row>
           {data.map(({ node: runner }, index) => {
-            if (dataset * 4 < index + 1) {
+            if (!showAll && dataset * 4 < index + 1) {
               return false;
             }
             return (
@@ -35,24 +36,24 @@ class Runners extends Component {
             );
           })}
         </Row>
-        {this.props.data.length >= this.state.dataset * 4 && (
-          <Row center="xs">
-            <Col sm={4}>
-              <a className="sk-button" onClick={e => this.showMore(e)}>
-                Daha Fazla
-              </a>
-            </Col>
-            <Col sm={4}>
-              <a
-                className="sk-button sk-button--inverted"
-                href="https://fonzip.com/sulukulegonulluleri/kampanya/liste"
-                target="_blank"
-              >
-                Tümünü Gör
-              </a>
-            </Col>
-          </Row>
-        )}
+        {this.props.data.length >= this.state.dataset * 4 &&
+          !showAll && (
+            <Row center="xs">
+              <Col sm={4}>
+                <button className="sk-button" onClick={e => this.showMore(e)}>
+                  Daha Fazla
+                </button>
+              </Col>
+              <Col sm={4}>
+                <button
+                  className="sk-button sk-button--inverted"
+                  onClick={e => navigate('/kosucular')}
+                >
+                  Tümünü Gör
+                </button>
+              </Col>
+            </Row>
+          )}
       </React.Fragment>
     );
   }

@@ -3,13 +3,9 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
-import Content, { HTMLContent } from '../components/Content';
-import { default as RunnerBase } from '../components/Runner';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
 export const RunnerTemplate = ({
-  content,
-  contentComponent,
   name,
   description,
   photo,
@@ -41,7 +37,7 @@ export const RunnerTemplate = ({
             <strong>Topladığım Bağış Miktarı: </strong>
             {totalDonation} TL
           </p>
-          <a href={fonzip} target="_blank">
+          <a href={fonzip} target="_blank" rel="noopener noreferrer">
             Bağış Yap
           </a>
         </Col>
@@ -66,7 +62,6 @@ const Runner = ({ data }) => {
     <Layout>
       <RunnerTemplate
         content={runner.html}
-        contentComponent={HTMLContent}
         description={runner.frontmatter.description}
         helmet={<Helmet title={`${runner.frontmatter.name} | Runner`} />}
         name={runner.frontmatter.name}

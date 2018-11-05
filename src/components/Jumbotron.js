@@ -9,7 +9,7 @@ export default () => (
       <p>
         <i>Sulukule için Koşuyorum, Okulu Terki Önlüyorum </i>
         <br /> Eğitimde fırsat eşitliğini sağlamak için koşuyoruz. Senin de
-        desteginle bir adim daha ileriye.
+        desteğinle bir adim daha ileriye.
       </p>
     </Col>
   </Row>
