@@ -13,7 +13,7 @@ description: >-
 
   Sevgiler, 
 goaldonation: '1000'
-totaldonation: '270'
+totaldonation: '320'
 fonzip: >-
   https://fonzip.com/sulukulegonulluleri/kampanya/sulukule-icin-kosuyorum--okulu-terki-onluyorum---8
 ---
