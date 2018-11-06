@@ -13,7 +13,7 @@ description: >-
   İsterseniz aşağıdaki bilgileri kullanarak eft veya havale de yapabiliyorsunuz.
   Her şey sizin konforunuz için tasarlandı:)
 goaldonation: '3000'
-totaldonation: '300'
+totaldonation: '775'
 fonzip: >-
   https://fonzip.com/sulukulegonulluleri/kampanya/sulukule-icin-kosuyorum--okulu-terki-onluyorum--18
 ---
