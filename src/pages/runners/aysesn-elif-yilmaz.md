@@ -15,7 +15,7 @@ description: >-
   ayrılışını seyretmek istemiyorum,’’ diyen gönüllülerle birlikte, daha güzel
   günlerin inşası ve daha adil bir dünya için koşuyoruz.
 goaldonation: '1400'
-totaldonation: '150'
+totaldonation: '350'
 fonzip: >-
   https://fonzip.com/sulukulegonulluleri/kampanya/sulukule-icin-kosuyorum--okulu-terki-onluyorum-38
 ---
