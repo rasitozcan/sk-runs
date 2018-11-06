@@ -11,7 +11,7 @@ description: >-
 
   Bağışlarınız için şimdiden teşekkürler! Benim için anlamı çok büyük :)
 goaldonation: '3000'
-totaldonation: '350'
+totaldonation: '470'
 fonzip: >-
   https://fonzip.com/sulukulegonulluleri/kampanya/sulukule-icin-kosuyorum--okulu-terki-onluyorum--2
 ---
