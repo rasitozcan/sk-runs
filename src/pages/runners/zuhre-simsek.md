@@ -18,7 +18,7 @@ description: >-
   40. Avrasya Maratonu' nda Sulukule Gönüllüleri Derneği için koşuyorum, risk
   altındaki çocukların okulu terkini önlüyorum!
 goaldonation: '2000'
-totaldonation: '397'
+totaldonation: '572'
 fonzip: >-
   https://fonzip.com/sulukulegonulluleri/kampanya/sulukule-icin-kosuyorum--okulu-terki-onluyorum-27
 ---
