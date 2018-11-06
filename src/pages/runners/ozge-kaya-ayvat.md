@@ -11,7 +11,7 @@ description: >-
   yürütmektedir. Bir çocuk da benim sayemde, bir çocuk da sizin sayenizde okula
   gitsin diye 11 Kasım'da İstanbul Maratonu'nda koşuyorum.
 goaldonation: '2000'
-totaldonation: '200'
+totaldonation: '270'
 fonzip: >-
   https://fonzip.com/sulukulegonulluleri/kampanya/sulukule-icin-kosuyorum--okulu-terki-onluyorum---6
 ---
