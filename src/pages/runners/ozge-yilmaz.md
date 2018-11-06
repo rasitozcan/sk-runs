@@ -7,7 +7,7 @@ description: >-
   Risk altındaki dezavantajlı ve ayrımcılığa maruz kalmış çocukların eğitim
   hakkına erişmeleri, onların hayatlarına umutla dokunabilmek için koşuyorum. 
 goaldonation: '1000'
-totaldonation: '179'
+totaldonation: '279'
 fonzip: >-
   https://fonzip.com/sulukulegonulluleri/kampanya/sulukule-icin-kosuyorum--okulu-terki-onluyorum-22
 ---
