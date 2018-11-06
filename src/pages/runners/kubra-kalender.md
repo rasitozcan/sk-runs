@@ -16,7 +16,7 @@ description: >-
 
   Bağış yap, yaptır; daha iyi bir dünyayı birlikte inşa edelim.
 goaldonation: '2500'
-totaldonation: '290'
+totaldonation: '760'
 fonzip: >-
   https://fonzip.com/sulukulegonulluleri/kampanya/sulukule-icin-kosuyorum--okulu-terki-onluyorum-6
 ---
