@@ -5,11 +5,7 @@ name: Cem Avcı
 photo: /img/cemavci.png
 description: >-
   Eğitim sisteminin, çocukların yeteneklerini ortaya çıkarabilecek, yenilikçi ve
-  yaratıcı yöntemleri kapsamasını arzuluyorum.
-
-
-  Sulukule Gönüllüleri, bu amaç için çabalıyor, bu sebeple İstanbul Maratonu'nda
-  çocuklar için koşuyorum, desteğinizi bekliyorum. 
+  yaratıcı yöntemleri kapsamasını arzuluyorum, desteğinizi bekliyorum. 
 goaldonation: '2000'
 totaldonation: '60'
 fonzip: >-
