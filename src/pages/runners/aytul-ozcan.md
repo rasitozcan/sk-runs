@@ -16,7 +16,7 @@ description: >-
   Hedefim ise yapılan irili ufaklı bağışlar ile bağışçılarımı çalışmaların
   destekçilerinden yapmak. 
 goaldonation: '2000'
-totaldonation: '555'
+totaldonation: '600'
 fonzip: >-
   https://fonzip.com/sulukulegonulluleri/kampanya/sulukule-icin-kosuyorum--okulu-terki-onluyorum-13
 ---
