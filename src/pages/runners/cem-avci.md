@@ -2,7 +2,7 @@
 templateKey: runner
 title: cem-avcı
 name: Cem Avcı
-photo: /img/cem_avci_1540533212577.png
+photo: /img/cemavci.png
 description: >-
   Eğitim sisteminin, çocukların yeteneklerini ortaya çıkarabilecek, yenilikçi ve
   yaratıcı yöntemleri kapsamasını arzuluyorum.
