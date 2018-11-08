@@ -25,6 +25,18 @@ collections:
       - {label: "Toplanan Bagis", name: "totaldonation", widget: "string"}
       - {label: "Fonzip URL", name: "fonzip", widget: "string"}
 
+  - name: "donations"
+    label: "Donations"
+    files:
+      - file: "src/pages/donations/index.md"
+        label: "Donations"
+        name: "donations"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "donation"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Goal Donation", name: "gdonation", widget: "number"}
+          - {label: "Total Donation", name: "tdonation", widget: "number"}
+
   - name: "pages"
     label: "Pages"
     files:
