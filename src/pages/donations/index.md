@@ -1,6 +1,7 @@
 ---
 templateKey: donation
 title: Donations
-gdonation: 10
-tdonation: 5
+gdonation: '109600'
+tdonation: '19746'
 ---
+
