@@ -13,13 +13,14 @@ export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props;
     const { edges: runners } = data.allMarkdownRemark;
+    const { edges: donations } = data.donations;
 
     return (
       <Layout>
         <Grid className="sk-home">
           <Jumbotron />
           <Runners data={runners} />
-          <DonationChart data={runners} />
+          <DonationChart data={donations} />
           <Parkours />
           <ContactForm />
         </Grid>
@@ -56,6 +57,24 @@ export const pageQuery = graphql`
             fonzip
             goaldonation
             totaldonation
+          }
+        }
+      }
+    }
+    donations: allMarkdownRemark(
+      filter: { frontmatter: { templateKey: { eq: "donation" } } }
+    ) {
+      edges {
+        node {
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            templateKey
+            title
+            gdonation
+            tdonation
           }
         }
       }

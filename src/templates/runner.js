@@ -10,7 +10,6 @@ export const RunnerTemplate = ({
   description,
   photo,
   goalDonation,
-  totalDonation,
   fonzip,
   helmet,
 }) => {
@@ -32,10 +31,6 @@ export const RunnerTemplate = ({
           <p>
             <strong>Hedeflediğim Bağış Miktarı: </strong>
             {goalDonation} TL
-          </p>
-          <p>
-            <strong>Topladığım Bağış Miktarı: </strong>
-            {totalDonation} TL
           </p>
           <a href={fonzip} target="_blank" rel="noopener noreferrer">
             Bağış Yap
@@ -93,7 +88,6 @@ export const pageQuery = graphql`
         description
         fonzip
         goaldonation
-        totaldonation
       }
     }
   }

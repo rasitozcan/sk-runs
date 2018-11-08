@@ -2,22 +2,12 @@ import React from 'react';
 import { Row, Col } from 'react-flexbox-grid';
 import PieChart from 'react-svg-piechart';
 
-export default ({ data: runners }) => {
-  let goal = 109600;
-  let total = 0;
+const DonationChart = ({ data }) => {
+  let goal = data[0].node.frontmatter.gdonation;
+  let total = data[0].node.frontmatter.tdonation;
 
-  if (runners && runners.length) {
-    runners.forEach(runner => {
-      // let goaldonation = runner.node.frontmatter.goaldonation;
-      let totaldonation = runner.node.frontmatter.totaldonation;
-
-      // goaldonation = isNaN(goaldonation) ? 0 : parseInt(goaldonation);
-      totaldonation = isNaN(totaldonation) ? 0 : parseInt(totaldonation);
-
-      // goal += goaldonation;
-      total += totaldonation;
-    });
-  }
+  goal = isNaN(goal) ? 0 : parseInt(goal);
+  total = isNaN(total) ? 0 : parseInt(total);
 
   return (
     <React.Fragment>
@@ -26,7 +16,7 @@ export default ({ data: runners }) => {
       <Row className="sk-donation-chart" middle="sm">
         <Col md={4} className="sk-donation-chart-goal">
           <h3>Hedeflenen Toplam Bağış</h3>
-          <span>{goal}</span>
+          <span className="value">{goal}</span>
           <span> TL</span>
         </Col>
         <Col md={4} className="sk-donation-chart-percentage">
@@ -44,10 +34,12 @@ export default ({ data: runners }) => {
         </Col>
         <Col md={4} className="sk-donation-chart-total">
           <h3>Toplanan Toplam Bağış</h3>
-          <span>{total}</span>
+          <span className="value">{total}</span>
           <span> TL</span>
         </Col>
       </Row>
     </React.Fragment>
   );
 };
+
+export default DonationChart;
