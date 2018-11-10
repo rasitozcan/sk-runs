@@ -43,8 +43,7 @@ description: >+
   Sen de çocukların adil ve eşit bir eğitim hakkına erişmelerine gönüllü olmak
   istersen, yürüttüğüm kampanyaya dilediğin miktarda bağışla destek olabilirsin.
 
-goaldonation: '1200'
-totaldonation: '0'
+goaldonation: '2700'
 fonzip: >-
   https://fonzip.com/sulukulegonulluleri/kampanya/sulukule-icin-kosuyorum--okulu-terki-onluyorum-41
 ---
