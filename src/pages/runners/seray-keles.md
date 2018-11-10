@@ -2,7 +2,7 @@
 templateKey: runner
 title: seray-keles
 name: Seray Keleş
-photo: /img/seray-keles-.jpg
+photo: /img/seraykeles.png
 description: >-
   40. İstanbul Avrasya Maratonu'nda, risk altındaki ve ayrımcılığa maruz kalan
   grupların okula terkini önlemek ve hakları konusunda farkındalık yaratmak için
