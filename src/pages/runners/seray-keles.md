@@ -11,8 +11,7 @@ description: >-
   arttırmak için gerçekleştirilen çalışmaların sürekliliği için desteklerinizi
   bekliyorum. Her adımımızla dezavantajları avantaja çevirebileceğimize
   inanıyorum. 
-goaldonation: '2000'
-totaldonation: '0'
+goaldonation: '500'
 fonzip: >-
   https://fonzip.com/sulukulegonulluleri/kampanya/sulukule-icin-kosuyorum--okulu-terki-onluyorum-20
 ---
