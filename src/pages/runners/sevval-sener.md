@@ -2,7 +2,7 @@
 templateKey: runner
 title: sevval-sener
 name: Şevval Şener
-photo: /img/sevval-sener.png
+photo: /img/sevvalsener.png
 description: >+
   Bu yıl 40. İstanbul Maratonu’nda, Sulukule Gönüllüleri Derneği(SGD) için
   çocukların okulu terkini önlemek amacıyla koşuyorum.
