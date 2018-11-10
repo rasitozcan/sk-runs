@@ -8,8 +8,7 @@ description: >+
   sene yine Sulukule Gönüllüleri Derneği aracılığıyla risk altındaki çocuklar
   okulu terk etmesinler diye koşacağım! 
 
-goaldonation: '1500'
-totaldonation: '0'
+goaldonation: '2000'
 fonzip: >-
   https://fonzip.com/sulukulegonulluleri/kampanya/sulukule-icin-kosuyorum--okulu-terki-onluyorum-43
 ---
