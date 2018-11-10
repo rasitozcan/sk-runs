@@ -2,7 +2,7 @@
 templateKey: runner
 title: sezin-isikli
 name: Sezin Işıklı
-photo: /img/sezin-is-ikli.jpg
+photo: /img/sezin-isikli.png
 description: >-
   2015 yılında hayatıma pek çok renk katan Sulukule Gönüllüleri ile tanıştım ve
   risk altındaki çocuklarla çalışmaya başladım. Dernek benim için hem müthiş bir
@@ -15,7 +15,6 @@ description: >-
   işler başardık, birbirimize çok şey öğrettik. Daha güzel günlerin inşası, daha
   adil bir dünya içinse desteğinize ihtiyacım var.
 goaldonation: '1000'
-totaldonation: '10'
 fonzip: >-
   https://fonzip.com/sulukulegonulluleri/kampanya/sulukule-icin-kosuyorum--okulu-terki-onluyorum-14
 ---
